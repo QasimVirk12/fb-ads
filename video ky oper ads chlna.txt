@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video with Advertisement Banner</title>
+  <style>
+    #videoContainer {
+      position: relative;
+      width: 728px; /* Width set to 728 */
+      height: calc(728px * 9 / 16); /* Height adjusted for 16:9 aspect ratio */
+      margin: 0 auto; /* Center the container horizontally */
+    }
+
+    #videoFrame {
+      width: 100%;
+      height: 100%;
+    }
+
+    #advertisementBanner {
+      position: absolute;
+      bottom: 0; /* Display advertisement banner at the bottom of the video */
+      left: 0;
+      width: 728px; /* Width set to 728 */
+      height: 90px; /* Height set to 90 */
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .advertisement-link {
+      color: #fff;
+      text-decoration: none;
+      width: 728px; /* Width set to 728 */
+      height: 90px; /* Height set to 90 */
+    }
+  </style>
+</head>
+<body>
+  <div id="videoContainer">
+    <!-- YouTube video embedded with autoplay -->
+    <iframe id="videoFrame" src="https://www.youtube.com/embed/fkSgH_1k5I0?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <!-- Advertisement banner -->
+  <div id="advertisementBanner">
+    <!-- Adding autoplay to the advertisement iframe -->
+    <iframe src="https://www.profitablegatecpm.com/u3dqa0r5k?key=6d06e4f6f1602b03093d2cf416e38359&autoplay=1" frameborder="0" allow="autoplay" class="advertisement-link"></iframe>
+  </div>
+</body>
+</html>
